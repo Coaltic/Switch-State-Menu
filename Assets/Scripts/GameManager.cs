@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 
-    public GameManager control;
+    static public GameManager control;
 
     public enum State
     {
@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour
         } 
     }
 
-    void SwitchState(State state)
+    public void SwitchState(State state)
     {
         previousState = currentState;
         currentState = state;
